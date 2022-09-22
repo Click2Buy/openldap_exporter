@@ -1,0 +1,31 @@
+metrics:
+  FileDescriptor:
+    dn: 'cn=Max File Descriptors,cn=Connections,cn=Monitor'
+    desc: 'file descriptor open'
+    attribute: 'monitorCounter'
+    metricType: 'gauge'
+  CurrentConnection:
+    dn: 'cn=Current,cn=Connections,cn=Monitor'
+    desc: 'current connection open'
+    metricType: 'gauge'
+    attribute: 'monitorCounter'
+  SearchOperation:
+    dn: 'cn=Search,cn=Operations,cn=Monitor'
+    desc: 'search operations'
+    metricType: 'gauge'
+    attribute: 'monitorOpCompleted'
+  AddedEntries:
+    dn: 'cn=Add,cn=Operations,cn=Monitor'
+    desc: 'added operations'
+    metricType: 'gauge'
+    attribute: 'monitorOpCompleted'
+  DeletedEntries:
+    dn: 'cn=Delete,cn=Operations,cn=Monitor'
+    desc: 'deleted operations'
+    metricType: 'gauge'
+    attribute: 'monitorOpCompleted'
+  Uptime:
+    dn: 'cn=Uptime,cn=Time,cn=Monitor'
+    desc: 'deleted operations'
+    metricType: 'gauge'
+    attribute: 'monitoredInfo'
