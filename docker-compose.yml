@@ -1,0 +1,11 @@
+version: '3'
+services:
+  openldap-exporter:
+    build: .
+    container_name: openldap-exporter
+    hostname: openldap-exporter
+    ports:
+      - 9142:9142
+    volumes:
+      - ./conf/:/home/prometheus/conf/
+      - ./metrics:/home/prometheus/metrics/
